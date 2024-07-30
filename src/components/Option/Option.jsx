@@ -18,7 +18,7 @@ function Option({ value, idx, handleClick, trueAnswer, userAnswer, summary }) {
       }
       className={`flex items-center space-x-3 mb-5  bg-neutral-200/50 rounded-full py-3 px-3  text-xs md:text-sm active:text-neutral-50 active:bg-orange-500/90  ${
         !summary &&
-        "md:hover:bg-blue-500/90 md:hover:text-neutral-50 cursor-pointer text-neutral-600"
+        "md:hover:bg-orange-500/90 md:hover:text-neutral-50 cursor-pointer text-neutral-600"
       } `}
       onClick={() => handleClick && handleClick(value)}
     >

@@ -1254,7 +1254,7 @@ body {
   }
 
   .md\:hover\:bg-orange-500\/90:hover {
-    background-color: rgb(249 115 22 / 0.9);
+    background-color: rgb(22 37 249 / 0.9);
   }
 
   .md\:hover\:text-neutral-50:hover {
