@@ -28,7 +28,6 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />} errorElement={<NotFound />}>
       <Route element={<RequireLogout />}>
-        {/* User Need to logout */}
         <Route path="login" element={<LoginPage />} action={loginAction} />
         <Route
           path="register"
@@ -38,7 +37,6 @@ const router = createBrowserRouter(
       </Route>
 
       <Route element={<RequireAuth />}>
-        {/* User need to login */}
         <Route index element={<App />} />
         <Route path="question" element={<Question />} />
         <Route path="question/:id" element={<SingleQuestion />} />

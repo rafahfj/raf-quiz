@@ -26,8 +26,8 @@ function Success() {
     navigate("/");
   };
   return (
-    <AnimateProvider className="flex flex-col space-y-10 md:max-w-xl md:mx-auto">
-      <h3 className="text-lg text-center text-neutral-900 font-bold md:text-xl">
+    <AnimateProvider className="flex flex-col space-y-10 md:mx-auto md:max-w-xl">
+      <h3 className="font-bold text-center text-lg text-neutral-900 md:text-xl">
         Your Final score is
       </h3>
 
@@ -40,7 +40,7 @@ function Success() {
         {score}
       </h1>
 
-      <div className="text-xs md:text-sm text-neutral-600 font-medium flex flex-col space-y-1">
+      <div className="flex flex-col space-y-1 font-medium text-neutral-600 text-xs md:text-sm">
         <p className="flex justify-between">
           Correct Answer <span className="text-green-600">{trueAnswer}</span>
         </p>
@@ -55,13 +55,13 @@ function Success() {
 
       <button
         onClick={handleClick}
-        className="grid place-items-center text-neutral-50 bg-orange-500 rounded-full py-2 hover:text-neutral-50 text-sm font-semibold"
+        className="place-items-center grid bg-indigo-600 py-2 rounded-full font-semibold text-neutral-50 text-sm hover:text-neutral-50"
       >
         Back to dashboard
       </button>
 
       {/* Summary */}
-      <h3 className="text-center text-neutral-600 font-semibold md:text-lg pt-[100px]">
+      <h3 className="pt-[100px] font-semibold text-center text-neutral-600 md:text-lg">
         Answer
       </h3>
       {allQuestion.map((question, i) => (

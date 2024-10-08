@@ -17,7 +17,7 @@ function TimeStamp() {
 
   useEffect(() => {
     if (!totalTime) {
-      setTimeStamp(new Date(new Date().getTime() + 3 * 60000).getTime());
+      setTimeStamp(new Date(new Date().getTime() + 60000).getTime());
     }
   }, []);
 
@@ -44,7 +44,7 @@ function TimeStamp() {
 
   return (
     <>
-      <div className="mx-auto flex max-w-fit items-center space-x-3 text-neutral-700 ring-[1px] ring-neutral-400 rounded-lg p-3 text-xs font-semibold">
+      <div className="flex items-center space-x-3 mx-auto p-3 rounded-lg ring-[1px] ring-neutral-400 max-w-fit font-semibold text-neutral-700 text-xs">
         <span>{countDown.minutes}</span>
         <span>Minutes</span>
         <span>{countDown.seconds}</span>

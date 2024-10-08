@@ -6,15 +6,15 @@ function RegisterForm({ isSubmitting: loading }) {
   return (
     <>
       <Form
-        className="flex flex-col max-w-[420px] mx-auto"
+        className="flex flex-col mx-auto max-w-[420px]"
         action="/register"
         method="post"
       >
-        <h1 className="font-bold text-lg text-neutral-900 mb-5">
+        <h1 className="mb-5 font-bold text-lg text-neutral-900">
           Let's improve your knowledge
         </h1>
         <label
-          className="text-xs md:text-sm text-neutral-600 font-semibold mb-2"
+          className="mb-2 font-semibold text-neutral-600 text-xs md:text-sm"
           htmlFor="name"
         >
           Name
@@ -25,10 +25,10 @@ function RegisterForm({ isSubmitting: loading }) {
           autoComplete="off"
           name="name"
           placeholder="Enter your name"
-          className="bg-neutral-50 ring-[1px] ring-gray-200 rounded-lg p-2 md:p-3 placeholder:text-gray-300 text-xs md:text-sm focus:border-none placeholder:text-xs md:placeholder:text-sm focus:outline-none focus:ring-[1px] focus:ring-orange-500/80 mb-5"
+          className="bg-neutral-50 mb-5 p-2 md:p-3 focus:border-none rounded-lg ring-[1px] ring-gray-200 focus:ring-[1px] focus:ring-indigo-600/80 text-xs md:text-sm md:placeholder:text-sm placeholder:text-gray-300 placeholder:text-xs focus:outline-none"
         />{" "}
         <label
-          className="text-xs md:text-sm text-neutral-600 font-semibold mb-2"
+          className="mb-2 font-semibold text-neutral-600 text-xs md:text-sm"
           htmlFor="email"
         >
           Email
@@ -39,11 +39,11 @@ function RegisterForm({ isSubmitting: loading }) {
           autoComplete="off"
           name="email"
           placeholder="Enter your email"
-          className="bg-neutral-50 ring-[1px] ring-gray-200 rounded-lg p-2 md:p-3 placeholder:text-gray-300 text-xs md:text-sm focus:border-none placeholder:text-xs md:placeholder:text-sm focus:outline-none focus:ring-[1px] focus:ring-orange-500/80 "
+          className="bg-neutral-50 p-2 md:p-3 focus:border-none rounded-lg ring-[1px] ring-gray-200 focus:ring-[1px] focus:ring-indigo-600/80 text-xs md:text-sm md:placeholder:text-sm placeholder:text-gray-300 placeholder:text-xs focus:outline-none"
         />{" "}
         <br />
         <label
-          className="text-xs md:text-sm text-neutral-600 font-semibold mb-2"
+          className="mb-2 font-semibold text-neutral-600 text-xs md:text-sm"
           htmlFor="password"
         >
           Password
@@ -51,12 +51,12 @@ function RegisterForm({ isSubmitting: loading }) {
         <input
           type="password"
           required
-          className="bg-neutral-50 ring-[1px] ring-gray-200 rounded-lg p-2 md:p-3 placeholder:text-gray-300 text-xs md:text-sm focus:border-none placeholder:text-xs md:placeholder:text-sm focus:outline-none focus:ring-[1px] focus:ring-orange-500/80 mb-5"
+          className="bg-neutral-50 mb-5 p-2 md:p-3 focus:border-none rounded-lg ring-[1px] ring-gray-200 focus:ring-[1px] focus:ring-indigo-600/80 text-xs md:text-sm md:placeholder:text-sm placeholder:text-gray-300 placeholder:text-xs focus:outline-none"
           name="password"
           placeholder="Enter your password"
         />
         <label
-          className="text-xs md:text-sm text-neutral-600 font-semibold mb-2"
+          className="mb-2 font-semibold text-neutral-600 text-xs md:text-sm"
           htmlFor="confirmPw"
         >
           Confirm Password
@@ -64,17 +64,18 @@ function RegisterForm({ isSubmitting: loading }) {
         <input
           type="password"
           required
-          className="bg-neutral-50 ring-[1px] ring-gray-200 rounded-lg p-2 md:p-3 placeholder:text-gray-300 text-xs md:text-sm focus:border-none placeholder:text-xs md:placeholder:text-sm focus:outline-none focus:ring-[1px] focus:ring-orange-500/80 "
+          className="bg-neutral-50 p-2 md:p-3 focus:border-none rounded-lg ring-[1px] ring-gray-200 focus:ring-[1px] focus:ring-indigo-600/80 text-xs md:text-sm md:placeholder:text-sm placeholder:text-gray-300 placeholder:text-xs focus:outline-none"
           name="confirmPw"
           placeholder="Enter your password"
         />
         <br />
         <button
           disabled={loading}
-          className={`flex rounded-full ${!loading
-            ? "bg-orange-500 hover:bg-neutral-50 hover:text-orange-500"
-            : "bg-orange-500/70 cursor-not-allowed"
-            }  p-1 justify-center font-semibold md:font-bold text-base md:text-lg text-center mt-5 mb-3 transition text-white`}
+          className={`flex rounded-full ${
+            !loading
+              ? "bg-indigo-600 hover:bg-neutral-50 hover:text-indigo-600"
+              : "bg-indigo-600/70 cursor-not-allowed"
+          }  p-1 justify-center font-semibold md:font-bold text-base md:text-lg text-center mt-5 mb-3 transition text-white`}
           type="submit"
         >
           {loading ? (
@@ -82,9 +83,9 @@ function RegisterForm({ isSubmitting: loading }) {
               <img
                 src={spinner}
                 alt="spinner"
-                className="w-6 h-6 object-contain mr-2 animate-spin"
+                className="mr-2 w-6 h-6 animate-spin object-contain"
               />
-              <p className="text-neutral-50/80 text-sm font-normal">
+              <p className="font-normal text-neutral-50/80 text-sm">
                 Loading...
               </p>
             </div>
@@ -92,9 +93,9 @@ function RegisterForm({ isSubmitting: loading }) {
             <span>Sign Up</span>
           )}
         </button>
-        <p className="text-gray-600 text-xs font-semibold mt-3">
+        <p className="mt-3 font-semibold text-gray-600 text-xs">
           Already have account ?
-          <Link className="ml-2 text-orange-500" to={"/login"}>
+          <Link className="ml-2 text-indigo-600" to={"/login"}>
             Sign In
           </Link>{" "}
         </p>

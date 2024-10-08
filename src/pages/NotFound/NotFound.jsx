@@ -3,17 +3,18 @@ import { Link } from "react-router-dom";
 
 const NotFound = () => {
   return (
-    <div className="h-screen w-full flex flex-col md:flex-row items-center justify-center">
-      <h1 className="text-[8rem] font-bold text-primary animate-bounce text-orange-500">404</h1>
-      <div className="w-24 h-1 md:w-1 md:h-24 bg-primary my-6 md:my-0 md:mx-8"></div>
+    <div className="flex md:flex-row flex-col justify-center items-center w-full h-screen">
+      <h1 className="font-bold text-[8rem] text-indigo-600 text-primary animate-bounce">
+        404
+      </h1>
+      <div className="bg-primary md:mx-8 my-6 md:my-0 w-24 md:w-1 h-1 md:h-24"></div>
       <div className="flex flex-col items-center">
-        <h2 className="text-2xl text-center mb-4">
+        <h2 className="mb-4 text-2xl text-center">
           Sorry, This page isn't available
         </h2>
         <Link to="/">
-          <button className="bg-orange-500 rounded-full p-2 hover:bg-neutral-50 hover:text-orange-500">
+          <button className="bg-indigo-600 hover:bg-neutral-50 p-2 rounded-full hover:text-indigo-600">
             <span className="text-xl"> Go To Home Page</span>
-
           </button>
         </Link>
       </div>

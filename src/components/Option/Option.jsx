@@ -16,9 +16,9 @@ function Option({ value, idx, handleClick, trueAnswer, userAnswer, summary }) {
           ? { backgroundColor: "rgb(187,247, 208)", fontWeight: 600 }
           : { fontWeight: "500" }
       }
-      className={`flex items-center space-x-3 mb-5  bg-neutral-200/50 rounded-full py-3 px-3  text-xs md:text-sm active:text-neutral-50 active:bg-orange-500/90  ${
+      className={`flex items-center space-x-3 mb-5  bg-neutral-200/50 rounded-full py-3 px-3  text-xs md:text-sm active:text-neutral-50 active:bg-indigo-600/90  ${
         !summary &&
-        "md:hover:bg-orange-500/90 md:hover:text-neutral-50 cursor-pointer text-neutral-600"
+        "md:hover:bg-indigo-600/90 md:hover:text-neutral-50 cursor-pointer text-neutral-600"
       } `}
       onClick={() => handleClick && handleClick(value)}
     >
