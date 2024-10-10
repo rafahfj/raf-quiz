@@ -38,11 +38,43 @@ Namun, jika Anda ingin menjalankan proyek ini secara lokal:
 
 ## Penggunaan
 
-1. Pada halaman pertama, pengguna akan diminta untuk login. Jika ini pertama kalinya pengguna mengakses Raf Quiz, mereka harus registrasi terlebih dahulu.
-2. Setelah login berhasil, pengguna akan diarahkan ke halaman pemilihan kategori dan tingkat kesulitan quiz.
-3. Pengguna kemudian akan menerima halaman konfirmasi yang memuat informasi jumlah soal, kategori, kesulitan, dan waktu yang diberikan.
-4. Setelah klik "Start", quiz akan dimulai dengan sistem timer. Jika waktu habis, quiz akan otomatis berakhir.
-5. Di akhir quiz, hasil akan ditampilkan, termasuk jumlah benar, salah, dan detail pertanyaan yang dijawab.
+1. **Halaman Login dan Registrasi**:
+
+   - Pada saat pertama kali mengunjungi website, pengguna akan diarahkan ke **halaman login**.
+   - Jika pengguna belum memiliki akun, mereka harus mendaftar di **halaman registrasi** dengan mengisi nama, email, dan password.
+   - Setelah registrasi, pengguna akan otomatis diarahkan kembali ke halaman login.
+   - Setelah berhasil login, pengguna akan diarahkan ke halaman utama untuk memilih quiz.
+
+2. **Memilih Kategori dan Kesulitan**:
+
+   - Setelah login, pengguna akan dihadapkan dengan halaman yang meminta mereka untuk **memilih kategori** dan **tingkat kesulitan** (mudah, sedang, sulit) dari pertanyaan quiz yang akan dijawab.
+   - Kategori dan tingkat kesulitan yang dipilih akan menentukan jenis pertanyaan yang akan diberikan.
+
+3. **Halaman Konfirmasi**:
+
+   - Setelah memilih kategori dan kesulitan, pengguna akan diarahkan ke **halaman konfirmasi**.
+   - Di halaman ini, akan ditampilkan informasi mengenai:
+     - **Jumlah soal** yang akan disajikan.
+     - **Kategori** dan **tingkat kesulitan** yang dipilih.
+     - **Waktu** yang diberikan untuk menyelesaikan quiz (dengan sistem timer).
+   - Pengguna dapat meninjau kembali pilihannya sebelum memulai quiz. Jika sudah siap, pengguna bisa mengklik tombol **"Start"** untuk memulai quiz.
+
+4. **Mengisi Quiz**:
+
+   - Setelah mengklik "Start", quiz akan dimulai dan pengguna akan diberikan pertanyaan sesuai dengan kategori dan kesulitan yang dipilih.
+   - **Timer** akan terlihat di bagian atas layar, menunjukkan sisa waktu yang dimiliki untuk menyelesaikan quiz.
+   - Pengguna harus menjawab semua soal dalam batas waktu yang ditentukan. Jika waktu habis, quiz akan otomatis berakhir.
+
+5. **Hasil Quiz**:
+
+   - Setelah menjawab semua pertanyaan atau setelah waktu habis, pengguna akan diarahkan ke **halaman hasil**.
+   - Di halaman hasil, pengguna dapat melihat:
+     - **Jumlah jawaban yang benar** dan **jumlah jawaban yang salah**.
+     - **Soal-soal yang sudah dijawab** sebelumnya beserta jawaban yang diberikan.
+   - Pengguna dapat memilih untuk memulai quiz baru dengan kategori dan kesulitan yang berbeda atau kembali ke halaman utama.
+
+6. **Logout**:
+   - Pengguna dapat melakukan **logout** dari aplikasi dengan mengklik tombol **logout** di menu navigasi, yang akan mengembalikan pengguna ke halaman login.
 
 ## Teknologi yang Digunakan
 
@@ -61,12 +93,3 @@ Kami sangat menghargai kontribusi dari pengembang lain. Jika Anda tertarik untuk
 3. Commit perubahan Anda (`git commit -m 'Menambahkan fitur baru'`).
 4. Push ke branch (`git push origin fitur-baru`).
 5. Ajukan pull request.
-
-## Lisensi
-
-Proyek ini dilisensikan di bawah lisensi MIT.
-
-```
-
-README ini mencakup informasi dasar seperti deskripsi proyek, fitur, teknologi yang digunakan, cara instalasi, dan penggunaan, serta cara kontribusi dan lisensi proyek. Jika ada tambahan informasi lain yang ingin ditambahkan, silakan beri tahu!
-```
