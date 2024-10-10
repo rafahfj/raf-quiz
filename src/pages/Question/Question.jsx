@@ -44,7 +44,7 @@ function Question() {
 
         <div className="flex space-x-5">
           <p className="min-w-[170px]">Time </p>
-          <p className="font-bold">3 mins.</p>
+          <p className="font-bold">1 mins.</p>
         </div>
       </div>
 
